@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="canonical" href="https://amystika.art/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Amystika - Bitcoin NFT Marketplace</title>
+    <meta name="description" content="Amystika is a minimalistic marketplace and gallery of Bitcoin NFTs">
+    <meta name="keywords" content="ordinal, ordinals, bitcoin, bitcoins, btc, satoshi, satoshis, sat, sats, nft, nfts, inscription, inscriptions, digital artifact, digital artifacts, marketplace" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amystika.art/">
+    <meta property="og:title" content="Amystika - Bitcoin Inscription Marketplace">
+    <meta property="og:description" content="Amystika is a minimalistic marketplace and gallery of Bitcoin NFTs">
+    <meta property="og:image" content="https://amystika.art/img/screenshot.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://amystika.art/">
+    <meta property="twitter:title" content="Amystika - Bitcoin Inscription Marketplace">
+    <meta property="twitter:description" content="Amystika is a minimalistic marketplace and gallery of Bitcoin NFTs">
+    <meta property="twitter:image" content="https://amystika.art/img/screenshot.png">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap CSS -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Pixel CSS -->
+    <link type="text/css" rel="stylesheet" href="css/w95.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header-global">
+        <nav id="navbar-main"
+            class="navbar d-flex flex-row align-items-center navbar-main navbar-expand-lg navbar-dark justify-content-between">
+            <ul class="navbar-nav navbar-nav-hover flex-row align-items-center">
+                <li class="nav-item">
+                    <a href="https://x.com/AmystikaArt" target="_blank" class="nav-link" role="button">
+                        <span class="nav-link-inner-text">X</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0);" onclick="aboutAmystikaOpen();" target="_blank" class="nav-link" role="button">
+                        <span class="nav-link-inner-text">What is Amystika?</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0);" onclick="faqOpen();" target="_blank" class="nav-link" role="button">
+                        <span class="nav-link-inner-text">FAQ</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="time text-center">
+                <span id="time" class="text-uppercase"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section -->
+        <section class="min-vh-100 d-flex align-items-center justify-content-center">
+            <div id="title-container">
+                <div id="title">
+                    <h1>Amystika</h1>
+                    <h2>A Secret Place</h2>
+                </div>
+            </div>
+            <div id="image-container" class="align-items-center justify-content-center"></div>
+        </section>
+
+        <!-- About Amystika Dialog -->
+        <dialog id="aboutAmystikaDialog" style="top:0; padding:0; background-color: transparent; border: 0">
+            <section class="min-vh-100 d-flex align-items-center" style="background-color: transparent;">
+                <div class="">
+                    <div class="row justify-content-center">
+                        <div class="col-12 d-flex align-items-center justify-content-center">
+                            <div class="card card-tertiary w-100 fmxw-500">
+                                <div class="card-header text-center">
+                                    <span>What is Amystika?</span>
+                                </div>
+                                <div class="card-body">
+                                    <form action="#" class="mt-0" onsubmit="aboutAmystikaClose(); return false;">
+                                        <div class="justify-content-center align-items-center mt-2 text-center">
+                                            <p class="font-weight-normal" >Amystika is a minimalistic marketplace and gallery of Bitcoin NFTs.<br>
+                                                Bitcoin NFTs will be revealed here in seasons.<br>
+                                                Each season will come with new features and a re-vamp of the website.
+                                            </p>
+                                            <p class="font-weight-normal">We are starting with season 0 where we will reveal 100 Bitcoin NFTs.<br>
+                                                For season 0, only a portion of the whole art piece will be revealed.<br>
+                                                The complete art piece will be revealed when the NFT is minted.
+                                            </p>
+                                            <p class="font-weight-normal">From season 1 and onwards, NFTs from other artists will be revealed on Amystika.</p>
+                                            <p class="font-weight-normal">Reach out to us on X or amystika.art@proton.me to be featured.</p>
+                                        </div>
+                                        <button type="submit" class="btn btn-block btn-primary">Close</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </dialog>
+
+        <!-- FAQ Dialog -->
+        <dialog id="faqDialog" style="top:0; padding:0; background-color: transparent; border: 0">
+            <section class="min-vh-100 d-flex align-items-center" style="background-color: transparent;">
+                <div class="">
+                    <div class="row justify-content-center">
+                        <div class="col-12 d-flex align-items-center justify-content-center">
+                            <div class="card card-tertiary w-100 fmxw-544">
+                                <div class="card-header text-center">
+                                    <span>FAQ</span>
+                                </div>
+                                <div class="card-body">
+                                    <form action="#" class="mt-0" onsubmit="faqClose(); return false;">
+                                        <div class="justify-content-left align-items-left mt-2 text-left">
+                                            <p class="font-weight-bold">Will there be support for wallets?</p>
+                                            <p class="font-weight-normal">
+                                                Yes, we are working on bringing support for wallets from Season 1.
+                                            </p>
+                                            <p class="font-weight-bold">How can I buy an NFT?</p>
+                                            <p class="font-weight-normal">
+                                                At the moment in season 0, all NFTs will be minted via their associated mint address. Send the required amount of Bitcoins by signing and broadcasting the PSBT or by manually sending the required amount to the mint address.<br>
+                                                NOTE: MAKE SURE YOU ARE SENDING THE BITCOINS FROM A TAPROOT ADDRESS
+                                            </p>
+                                            <p class="font-weight-bold">Why do I have to send the amount from a taproot address?</p>
+                                            <p class="font-weight-normal">
+                                                All NFTs that are bought will be sent to the buyer's Bitcoin address. As Bitcoin NFTs (Ordinal Inscriptions) can only be stored in the taproot, the buyer needs to send the required amount from a taproot address to be able to successfully receive the NFT.
+                                            </p>
+                                            <p class="font-weight-bold">I accidentally sent the amount from a non-taproot address. Can I get the Bitcoins back?</p>
+                                            <p class="font-weight-normal">
+                                                Yes, all significant amount of satoshis accidentally sent from a non-taproot address will be returned.
+                                            </p>
+                                            <p class="font-weight-bold">I accidentally sent the wrong amount to the mint address. Can I get the Bitcoins back?</p>
+                                            <p class="font-weight-normal">
+                                                Yes, all significant amount of satoshis not meeting the mint price accidentally sent to the mint address will be returned.
+                                            </p>
+                                        </div>
+                                        <button type="submit" class="btn btn-block btn-primary">Close</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </dialog>
+
+        <!-- Art Dialog -->
+        <dialog id="artDialog" style="top:0; padding:0; background-color: transparent; border: 0">
+            <section class="min-vh-100 d-flex align-items-center" style="background-color: transparent;">
+                <div class="">
+                    <div class="row justify-content-center">
+                        <div class="col-12 d-flex align-items-center justify-content-center">
+                            <div class="card card-tertiary w-100 fmxw-544">
+                                <div class="card-header text-center">
+                                    <span><span class="artTitle"></span> by <span class="artistName"></span></span>
+                                </div>
+                                <div class="card-body">
+                                    <form action="#" class="mt-0" onsubmit="artClose(); return false;">
+                                        <div class="justify-content-center align-items-center mt-2 text-center">
+                                            <img class="artPiece">
+                                            <p class="artDescription" class="font-weight-normal"></p>
+                                            <!-- Form -->
+                                            <div class="form-group">
+                                                <label for="inscriptionNumber" style="float: left" class="mb-1">Number</label>
+                                                <input id="inscriptionNumber" type="text" class="form-control mb-2" placeholder="Loading..." required readonly />
+                                                <label for="inscriptionId" style="float: left" class="mb-1">ID</label>
+                                                <input id="inscriptionId" type="text" class="form-control mb-2" placeholder="Loading..." required readonly />
+                                                <label for="owner" style="float: left" class="mb-1">Owner</label>
+                                                <input id="owner" type="text" class="form-control mb-2" placeholder="Loading..." required readonly />
+                                                <label for="utxo" style="float: left" class="mb-1">UTXO</label>
+                                                <input id="utxo" type="text" class="form-control mb-2" placeholder="Loading..." required readonly />
+                                                <label for="contentValue" style="float: left" class="mb-1">Content type</label>
+                                                <input id="contentValue" type="text" class="form-control mb-2" placeholder="Loading..." required readonly />
+                                            </div>
+                                            <!-- End of Form -->
+                                            <div class="justify-content-center align-items-center mt-2 text-center">
+                                                <p class="font-weight-normal">
+                                                    <a href="" class="font-weight-bold" id="explorerLink" target="_blank">View on ordinals explorer</a>
+                                                </p>
+                                            </div>
+                                            <button type="submit" class="btn btn-block btn-primary">Close</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </dialog>
+        
+        <!-- Art Mint Dialog -->
+        <dialog id="artMintDialog" style="top:0; padding:0; background-color: transparent; border: 0">
+            <section class="min-vh-100 d-flex align-items-center" style="background-color: transparent;">
+                <div class="">
+                    <div class="row justify-content-center">
+                        <div class="col-12 d-flex align-items-center justify-content-center">
+                            <div class="card card-tertiary w-100 fmxw-544">
+                                <div class="card-header text-center">
+                                    <span><span class="artTitle"></span> by <span class="artistName"></span></span>
+                                </div>
+                                <div class="card-body">
+                                    <form action="#" class="mt-0" onsubmit="artClose(); return false;">
+                                        <div class="justify-content-center align-items-center mt-4 text-center">
+                                            <img class="artPiece">
+                                            <p class="artDescription" class="font-weight-normal"></p>
+                                            <p id="inscriptionSold" class="font-weight-normal" style="display: none">
+                                               This NFT has been sold. It will be minted and revealed soon.
+                                            </p>
+                                            <button type="submit" id="btnMintInscription" class="btn btn-block btn-tertiary" onclick="mintOpen(); return false">Mint NFT now for 0.01 BTC</button>
+                                            <button type="submit" class="btn btn-block btn-primary">Close</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </dialog>
+        
+        <!-- Mint Dialog -->
+        <dialog id="mintDialog" style="top:0; padding:0; background-color: transparent; border: 0">
+            <section class="min-vh-100 d-flex align-items-center" style="background-color: transparent;">
+                <div class="">
+                    <div class="row justify-content-center">
+                        <div class="col-12 d-flex align-items-center justify-content-center">
+                            <div class="card card-tertiary w-100 fmxw-500">
+                                <div class="card-header text-center">
+                                    <span>Mint <span id="inscriptionName"></span> for 0.01 BTC</span>
+                                </div>
+                                <div class="card-body">
+                                    <div id="buyStep1">
+                                        <form action="#" class="mt-0" onsubmit="mintClose(); return false;">
+                                            <!-- Form -->
+                                            <div class="form-group">
+                                                <label for="payerAddress" class="mb-2">Buyer's address:</label>
+                                                <input id="payerAddress" type="text" class="form-control" required oninput="updatePayerAddress()" />
+
+                                                <div class="justify-content-center align-items-center text-center mt-2" style="padding:0 0.1em; display: none;" id="loadingUTXOs">
+                                                    <p class="font-weight-normal">
+                                                        Loading your UTXOs...
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- End of Form -->
+                                            <button type="submit" id="btnBuyInscription" class="btn btn-block btn-tertiary" disabled>Mint NFT</button>
+                                            <button type="submit" class="btn btn-block btn-primary">Close</button>
+                                        </form>
+                                    </div>
+                                    <form id="buyStep2" action="#" class="mt-0" onsubmit="return false;" style="display: none;">
+                                        <div class="justify-content-center align-items-center mt-2 text-center">
+                                            <!-- Form -->
+                                            <div class="form-group">
+                                                <label for="generatedBuyPsbt" class="mb-2" id="generatedBuyPsbtTitle"></label>
+                                                <textarea id="generatedBuyPsbt" class="form-control"></textarea>
+                                            </div>
+
+                                            <button class="btn btn-secondary mb-4" style="float: left" onclick="copyInput(this, 'generatedBuyPsbt')">Copy PSBT</button>
+                                            <button class="btn btn-secondary mb-4" style="float: right" onclick="downloadInput('generatedBuyPsbt', 'mintInscription69.psbt')">Download PSBT</button>
+
+                                            <div id="buyPsbtQrCode" class="text-center"></div>
+
+                                            <div class="justify-content-center align-items-center text-center mt-4">
+                                                <p class="font-weight-normal">Alternatively, send  0.01 BTC to<br><span id="mintAddr"></span><br>to mint the NFT (See FAQ for details)</p>
+                                                <p class="font-weight-normal" id="buyStatusMessage">
+                                                    Waiting to see the transaction in the mempool...
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </dialog>
+    </main>
+    <script src="js/secp256k1.js"></script>
+    <script type="module" src="js/bitcoinjs-lib.js"></script>
+    <script src="js/qrcode.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
