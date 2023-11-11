@@ -7,5 +7,14 @@
         "authorId": 0,
         "isminted": false,
         "mintaddress": "bc1p0xjv4ustcc9pce5vugjhy6xm2mgd7ur28n7kr2dgulhq8p28wgxqde5fvf"
+    },
+    {
+        "imageId": 1,
+        "filename": "ascendancy-of-the-ancients.png",
+        "title": "Ascendancy of the Ancients",
+        "description": "The mighty ancients shed their chains, to the sky, they claim their part,\nIn the heavens' endless canvas, they paint their immortal art.",
+        "authorId": 0,
+        "isminted": false,
+        "mintaddress": "bc1p2py35vvnwghu8pdqpu2sjj32c0p8urvp5vckjhc6dzpfar8rc4xqsgdu8t"
     }
 ]
