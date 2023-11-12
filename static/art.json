@@ -16,5 +16,14 @@
         "authorId": 0,
         "isminted": false,
         "mintaddress": "bc1p2py35vvnwghu8pdqpu2sjj32c0p8urvp5vckjhc6dzpfar8rc4xqsgdu8t"
+    },
+    {
+        "imageId": 2,
+        "filename": "shadow-griffith.png",
+        "title": "Shadow Griffith",
+        "description": "In shadows deep, she hides her might,\nHer eyes, a void, bereft of light.",
+        "authorId": 0,
+        "isminted": false,
+        "mintaddress": "bc1pxdvu55qxfak5xthtrmzlrla6wae26j5h3n7z9y5mpe4uhdg2947qd2sx5e"
     }
 ]
